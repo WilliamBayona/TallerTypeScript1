@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>TV Series</title>
+  <style>
+    .navbar-custom {
+      background-color: #007bff; /* Color azul */
+    }
+    .navbar-custom .navbar-brand {
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-custom .navbar-brand img {
+      height: 40px; /* Ajusta la altura de la imagen según sea necesario */
+      margin-right: 10px; /* Espacio entre la imagen y el texto */
+    }
+    .table-custom th {
+      background-color: #f8f9fa; /* Fondo claro para la cabecera de la tabla */
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado azul con imagen -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">
+      <img src="images/1366_2000.jpg" alt="Logo"> <!-- Reemplaza con la ruta de tu imagen -->
+      TV Series
+    </a>
+  </nav>
+
+  <div class="container mt-5">
+
+    <!-- Tabla de series -->
+    <table class="table table-hover table-bordered table-custom" id="seriesTable">
+      <thead class="thead-light">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas de series generadas dinámicamente -->
+      </tbody>
+    </table>
+
+    <div id="Season-Average" class="text-left mb-4"></div>
+  </div>
+
+  <script src="scripts/main.js" type="module" defer></script>
+</body>
+</html>
